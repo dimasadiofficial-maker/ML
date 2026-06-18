@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import pandas as pd
 import joblib
 
-app = Flask(__name__, template_folder='.')
+app = Flask(__name__)
 
 # Load model dan scaler
 model = joblib.load("heart_disease_model.pkl")
